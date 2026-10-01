@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +62,7 @@
             margin-bottom: 15px;
         }
 
-        /* 评分标准 1: One-sentence Personal Statement */
+        /* Personal Statement */
         .statement {
             font-size: 1.05em;
             color: #4a5568;
@@ -73,14 +74,18 @@
             margin-bottom: 15px;
         }
 
-        .contact-links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin-right: 15px;
+        .contact-info {
+            font-size: 0.95em;
+            color: #4a5568;
             font-weight: 500;
         }
 
-        .contact-links a:hover {
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
             text-decoration: underline;
         }
 
@@ -100,7 +105,7 @@
             margin-top: 0;
         }
 
-        /* 评分标准 2: Skills List */
+        /* Skills List */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -126,7 +131,7 @@
             margin-right: 8px;
         }
 
-        /* 评分标准 3: Projects Section */
+        /* Projects Section */
         .project-card {
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -146,7 +151,7 @@
         }
 
         .project-card p {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: #4a5568;
         }
 
@@ -187,7 +192,7 @@
 
     <!-- Header & Personal Statement Section -->
     <header>
-        <img src="headshot.jpg" alt="Yulun (Wendy) Wu" class="profile-img">
+        <img src="IMG_8306.JPG" alt="Yulun (Wendy) Wu" class="profile-img">
         <div class="header-info">
             <h1>Yulun (Wendy) Wu</h1>
             <div class="subtitle">Business Analysis and Information Technology (BAIT) Student @ Rutgers Business School</div>
@@ -197,9 +202,8 @@
                 Aspiring Business Analyst with a strong background in financial accounting, data analytics, and audit reconciliation, dedicated to transforming complex datasets into actionable business insights.
             </div>
 
-            <div class="contact-links">
-                <a href="mailto:yw1550@scarletmail.rutgers.edu">Email Me</a> | 
-                <a href="https://www.linkedin.com/in/yulun-wu0421/" target="_blank">LinkedIn Profile</a>
+            <div class="contact-info">
+                <strong>Email:</strong> <a href="mailto:yw1550@scarletmail.rutgers.edu">yw1550@scarletmail.rutgers.edu</a>
             </div>
         </div>
     </header>
@@ -219,7 +223,7 @@
         </ul>
     </section>
 
-    <!-- Requirement 3: Projects Section (3 Relevant Projects) -->
+    <!-- Requirement 3: Projects Section (2 Relevant Projects) -->
     <section>
         <h2>Featured Projects</h2>
 
@@ -232,7 +236,6 @@
                 <span class="tag">Financial Modeling</span>
             </div>
             <p>Built a financial dataset covering 18 listed companies across Automotive, E-commerce, and Sports sectors. Implemented a regression model (R² = 0.0383) analyzing 50+ Accruals-to-CFO observations across 3 years of data to evaluate firm nationality effects on earnings sustainability.</p>
-            <p><a href="https://www.linkedin.com/in/yulun-wu0421/" target="_blank">View Project Details on LinkedIn →</a></p>
         </div>
 
         <!-- Project 2 -->
@@ -244,19 +247,6 @@
                 <span class="tag">Data Reconciliation</span>
             </div>
             <p>Reconciled large-scale Trial Balance (TB) and EMS ledger data for structured entities during Deloitte internship. Automated calculation of loan maturity dates and balances for multi-currency accounts (USD, HKD, JPY) using advanced Excel functions, ensuring high precision and efficiency.</p>
-            <p><a href="https://www.linkedin.com/in/yulun-wu0421/" target="_blank">View Experience on LinkedIn →</a></p>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <h3>3. Personal Portfolio Website & GitHub Pages Deployment</h3>
-            <div class="project-tags">
-                <span class="tag">HTML5 / CSS3</span>
-                <span class="tag">GitHub Pages</span>
-                <span class="tag">Git Version Control</span>
-            </div>
-            <p>Designed and published a responsive digital portfolio showcasing professional skills, background, and analytics projects for potential employers using GitHub repository and GitHub Pages deployment.</p>
-            <p><a href="https://github.com/yw1550" target="_blank">View Code Repository →</a></p>
         </div>
     </section>
 
@@ -265,4 +255,4 @@
     </footer>
 
 </body>
-</html># YulunWu.github.io
+</html>
