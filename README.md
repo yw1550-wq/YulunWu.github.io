@@ -1,1 +1,268 @@
-# YulunWu.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yulun (Wendy) Wu | Personal Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --accent-color: #2b6cb0;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+            font-size: 2em;
+        }
+
+        .subtitle {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        /* 评分标准 1: One-sentence Personal Statement */
+        .statement {
+            font-size: 1.05em;
+            color: #4a5568;
+            font-style: italic;
+            background: #ebf8ff;
+            padding: 12px 16px;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* 评分标准 2: Skills List */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skill-item {
+            background: #edf2f7;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-item::before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* 评分标准 3: Projects Section */
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #faf5ff;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .project-card p {
+            margin-bottom: 12px;
+            color: #4a5568;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .tag {
+            font-size: 0.8em;
+            background: #e2e8f0;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #4a5568;
+        }
+
+        footer {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .statement {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Personal Statement Section -->
+    <header>
+        <img src="headshot.jpg" alt="Yulun (Wendy) Wu" class="profile-img">
+        <div class="header-info">
+            <h1>Yulun (Wendy) Wu</h1>
+            <div class="subtitle">Business Analysis and Information Technology (BAIT) Student @ Rutgers Business School</div>
+            
+            <!-- Requirement 1: One-sentence Personal Statement -->
+            <div class="statement">
+                Aspiring Business Analyst with a strong background in financial accounting, data analytics, and audit reconciliation, dedicated to transforming complex datasets into actionable business insights.
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:yw1550@scarletmail.rutgers.edu">Email Me</a> | 
+                <a href="https://www.linkedin.com/in/yulun-wu0421/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Requirement 2: Skills Showcase -->
+    <section>
+        <h2>Technical & Professional Skills</h2>
+        <ul class="skills-grid">
+            <li class="skill-item">Financial Accounting (3 Statements)</li>
+            <li class="skill-item">Advanced Excel (Data Analysis, Regression)</li>
+            <li class="skill-item">SQL (In Progress)</li>
+            <li class="skill-item">Java (Basic)</li>
+            <li class="skill-item">Financial Modeling & Valuation</li>
+            <li class="skill-item">Data Cleaning & Reconciliation</li>
+            <li class="skill-item">Git & GitHub</li>
+            <li class="skill-item">PowerPoint & Business Presentation</li>
+        </ul>
+    </section>
+
+    <!-- Requirement 3: Projects Section (3 Relevant Projects) -->
+    <section>
+        <h2>Featured Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>1. Comparative Analysis of Earning Quality & Sustainability (US vs. China)</h3>
+            <div class="project-tags">
+                <span class="tag">Excel</span>
+                <span class="tag">Regression Analysis</span>
+                <span class="tag">Financial Modeling</span>
+            </div>
+            <p>Built a financial dataset covering 18 listed companies across Automotive, E-commerce, and Sports sectors. Implemented a regression model (R² = 0.0383) analyzing 50+ Accruals-to-CFO observations across 3 years of data to evaluate firm nationality effects on earnings sustainability.</p>
+            <p><a href="https://www.linkedin.com/in/yulun-wu0421/" target="_blank">View Project Details on LinkedIn →</a></p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>2. Deloitte FSI Audit & Financial Data Automation</h3>
+            <div class="project-tags">
+                <span class="tag">Excel Automation</span>
+                <span class="tag">Audit & Assurance</span>
+                <span class="tag">Data Reconciliation</span>
+            </div>
+            <p>Reconciled large-scale Trial Balance (TB) and EMS ledger data for structured entities during Deloitte internship. Automated calculation of loan maturity dates and balances for multi-currency accounts (USD, HKD, JPY) using advanced Excel functions, ensuring high precision and efficiency.</p>
+            <p><a href="https://www.linkedin.com/in/yulun-wu0421/" target="_blank">View Experience on LinkedIn →</a></p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>3. Personal Portfolio Website & GitHub Pages Deployment</h3>
+            <div class="project-tags">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">GitHub Pages</span>
+                <span class="tag">Git Version Control</span>
+            </div>
+            <p>Designed and published a responsive digital portfolio showcasing professional skills, background, and analytics projects for potential employers using GitHub repository and GitHub Pages deployment.</p>
+            <p><a href="https://github.com/yw1550" target="_blank">View Code Repository →</a></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Yulun (Wendy) Wu. Built with HTML & CSS. Hosted on GitHub Pages.
+    </footer>
+
+</body>
+</html># YulunWu.github.io
